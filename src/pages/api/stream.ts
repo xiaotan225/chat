@@ -82,7 +82,9 @@ export const post: APIRoute = async context => {
 
   return new Response(stream,{
   	  headers: {
-  	  			"Access-Control-Allow-Origin": "*"
+  	  			"Access-Control-Allow-Origin": "http://localhost:81",
+				"Access-Control-Allow-Headers": "content-type",
+				"Access-Control-Allow-Methods": "DELETE,PUT,POST,GET,OPTIONS",
   	  		}
   })
 }
